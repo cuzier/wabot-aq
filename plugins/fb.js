@@ -21,7 +21,7 @@ let handler = async (m, { conn, args }) => {
     month: 'long',
     year: 'numeric'
   }
-  let unknown = '_Unknown_'
+  let unknown = '_Unknown?_'
   let none = '_None_'
   let caption = `
 Konten${isFamilyFriendly ? ' ' : ' *Tidak* '}Family Friendly
