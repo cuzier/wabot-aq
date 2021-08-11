@@ -13,7 +13,7 @@ Selama ${clockString(new Date - user.afk)}
   for (let jid of jids) {
     let user = global.db.data.users[jid]
     if (!user) continue
-    let afkTime = user.afk
+    let afkTime = user.auto
     if (!afkTime || afkTime < 0) continue
     let reason = user.afkReason || ''
     m.reply(`
